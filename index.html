@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>9Box's - one ring</title>
+</head>
+<style>
+	*{
+		box-sizing: border-box;
+		transition: all .3s ease;
+	}
+	.container{
+		max-width: 800px;
+		width: 100%;
+		margin: 0 auto;
+	}
+	.room{
+		padding: 15px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: flex-start;
+		} .room__person{
+			width: 77px;
+			height: 77px;
+			border: 1px solid lightgray;
+			box-shadow: none;
+		} .room__person:hover{
+			box-shadow: 0 0 4px lightgray;
+		}
+	#output{
+		width: 100%;
+		resize: none;
+
+	}
+
+</style>
+<body>
+	<main>
+		<section id="room" class="room container">
+			<div class="room__person"></div>
+			<div class="room__person"></div>
+			<div class="room__person"></div>
+			<div class="room__person"></div>
+			<div class="room__person"></div>
+			<div class="room__person"></div>
+			<div class="room__person"></div>
+			<div class="room__person"></div>
+			<div class="room__person"></div>			
+		</section>
+		<section class="output container">
+			<div class="output__text">
+				<textarea name="output" id="output" cols="30" rows="20" readonly="readonly"></textarea>
+			</div>
+		</section>
+	</main>
+
+	<script src="js\script.js"></script>
+</body>
+</html>
